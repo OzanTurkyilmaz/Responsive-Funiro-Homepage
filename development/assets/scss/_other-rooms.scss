@@ -1,0 +1,146 @@
+ .other-rooms {
+ 	font-family: 'Gilroy-Regular', sans-serif;
+ 	height: 670px;
+ 	background-color: $rooms-bgcolor;
+ 	box-sizing: border-box;
+min-width: 1400px;
+margin: auto;
+
+
+ 	&__container {
+ 		background-color: $rooms-bgcolor;
+ 		display: flex;
+ 		flex-direction: row;
+ 		justify-content: space-evenly;
+ 		align-items: center;
+		
+		 
+
+ 		&__content {
+ 			background-color: $rooms-bgcolor;
+ 			width: 378px;
+ 			height: 582px;
+ 			display: flex;
+ 			flex-direction: column;
+ 			align-items: flex-start;
+ 			justify-content: center;
+			 margin-top: 44px;
+
+
+
+
+ 			&__title {
+ 				display: inline;
+ 				background-color: $rooms-bgcolor;
+				 color: $title-color;
+				 font-size: 40px;
+ 				font-weight: 700;
+				margin: 0;
+
+
+ 			}
+
+ 			&__subtitle {
+ 				background-color: $rooms-bgcolor;
+			color: $subtitle-color;
+
+ 			}
+
+ 			&__link {
+ 				text-decoration: none;
+ 				width: 176px;
+ 				height: 48px;
+ 				padding: 12px 40px 12px 40px;
+ 				background-color: $btn-bgcolor;
+ 				color: white;
+ 				font-weight: 600;
+
+ 			}
+ 		}
+
+ 		&__slide1 {
+ 			width: 404px;
+ 			height: 582px;
+			 
+ 		}
+
+ 		&__slide2 {
+ 			width: 372px;
+ 			height: 582px;
+			 background-color: $rooms-bgcolor;
+
+
+		&__icons{
+			background-color: $rooms-bgcolor;
+
+			.svg{
+					background-color: $rooms-bgcolor;
+					margin-top: 40px;
+
+			}
+			
+		}	 
+			
+ 		}
+
+ 	}
+
+
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ @include mq(tablet, max) {
+ 	.rooms {
+
+ 		background-color: black;
+
+ 	}
+ }

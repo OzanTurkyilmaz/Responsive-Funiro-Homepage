@@ -1,0 +1,16 @@
+.blogs {
+
+	background-color: $header-bgcolor;
+	font-family: 'Gilroy-Regular', sans-serif;
+	box-sizing: border-box;
+
+	&__container {
+		text-align: center;
+
+		&__title {
+			font-weight: 700;
+			font-size: 40px;
+		}
+	}
+
+}
