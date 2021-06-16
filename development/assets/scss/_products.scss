@@ -7,13 +7,14 @@
 	&__top {
 		display: flex;
 		justify-content: space-between;
-		min-width: 1440px;
-		margin-left: 124px;
-		margin-right: 100px;
+		flex-wrap: wrap;
+		
 
 		&__container {
 			display: flex;
 			align-items: center;
+			margin-left: 80px;
+			margin-right: 80px;
 
 			&__txt {
 				flex-direction: column;
@@ -41,6 +42,7 @@
 
 .products {
 	font-family: "Gilroy-Regular", sans-serif;
+	max-width: 1460px;
 
 	&__top {
 		text-align: center;
@@ -51,13 +53,25 @@
 			justify-content: space-evenly;
 			align-items: center;
 			flex-wrap: wrap;
-			margin-left: 100px;
-			margin-right: 104px;
-			min-width: 1236px;
+
 
 			&__info {
 				background-color: #f4f5f7;
 				margin: 32px;
+
+			/*	&__img{
+					background-color: indigo;
+				
+
+					&__product{
+						background-color: lawngreen;
+					}
+
+					&__situtation{
+						background-color: lightblue;
+					}
+				}
+				*/
 
 				&__txt {
 					flex-direction: column;
@@ -98,6 +112,30 @@
 					}
 				}
 			}
+		}
+	}
+}
+
+.button {
+	font-family: "Gilroy-Regular", sans-serif;
+	display: flex;
+	justify-content: center;
+
+	&__container {
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+		justify-content: center;
+
+		&__txt {
+			border: 1px solid #e89f71;
+			background: #ffffff;
+			color: #e89f71;
+			text-align: center;
+			font-size: 24px;
+			margin-top: 2em;
+			cursor: pointer;
+			padding: 12px 82px 12px 82px;
 		}
 	}
 }
