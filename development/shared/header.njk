@@ -1,40 +1,44 @@
 <header class="header">
     <nav class="header__top">
-            <div class="header__top__container">
-                <a href="" class="header__top__container__logo">Funiro.</a>
-                <div class="header__top__container__menu">
-                    <a href="" class="header__top__container__menu__item">
-                        Products 
-                        {% include "../assets/images/arrow-btn.svg" %} 
-                            
-                    </a>
-                    <a href="" class="header__top__container__menu__item">
-                        Room
-                        {% include "../assets/images/arrow-btn.svg" %}
-                    </a>
-                    <a href="" class="header__top__container__menu__item">Insprations</a>
+        <div class="header__top__container">
+            <a href="" class="header__top__container__logo">Funiro.</a>
+            <div class="header__top__container__menu">
+                <a href="" class="header__top__container__menu__item">
+                    Products
+                    {% include "../assets/images/icons/arrow-btn.svg" %}
+
+                </a>
+                <a href="" class="header__top__container__menu__item">
+                    Room
+                    {% include "../assets/images/icons/arrow-btn.svg" %}
+                </a>
+                <a href="" class="header__top__container__menu__item">Insprations</a>
+
+                <div class="header__top__container__menu__responsive">
+                    {% include "../assets/images/icons/header-menu.svg" %}
                 </div>
             </div>
-            <div class="header__top__search">
-                    <a href="" class="header__top__search__icon">
-                        {% include "../assets/images/search-btn.svg" %}    
-                    </a>
-                    <input type="text" class="header__top__search__txt" placeholder="search for minimalist chair"/>
-            </div>
-                <div class="header__top__icons">
-                    <a href="" class="header__top__icons__item">
-                        {% include "../assets/images/like-btn.svg" %}    
-                            
-                    </a>
-                    <a href="" class="header__top__icons__item">
-                        {% include "../assets/images/shop-btn.svg" %}   
-                    </a>
-                    <a href="" class="header__top__icons__item">
+        </div>
+        <div class="header__top__search">
+            <a href="" class="header__top__search__icon">
+                {% include "../assets/images/icons/search-btn.svg" %}
+            </a>
+            <input type="text" class="header__top__search__txt" placeholder="search for minimalist chair" />
+        </div>
+        <div class="header__top__icons">
+            <a href="" class="header__top__icons__item">
+                {% include "../assets/images/icons/like-btn.svg" %}
 
-                        {% include "../assets/images/user-btn.svg" %}  
+            </a>
+            <a href="" class="header__top__icons__item">
+                {% include "../assets/images/icons/shop-btn.svg" %}
+            </a>
+            <a href="" class="header__top__icons__item">
 
-                    </a>
-                </div>
+                {% include "../assets/images/icons/user-btn.svg" %}
+
+            </a>
+        </div>
 
 
 
@@ -43,24 +47,27 @@
         <div class="header__image-gallery__top">
             <div class="header__image-gallery__top__null"></div>
             <div class="header__image-gallery__top__indicator">
-                {% include "../assets/images/indicator-btn.svg" %} 
+                {% include "../assets/images/icons/indicator-btn.svg" %}
             </div>
             <div class="header__image-gallery__top__ellipse">
-                <div class="header__image-gallery__ellipse__left">
-                    {% include "../assets/images/left-arrow-btn.svg" %} 
+                <div class="header__image-gallery__top__ellipse__left">
+                    {% include "../assets/images/icons/left-arrow-btn.svg" %}
                 </div>
-                <div class="header__image-gallery__ellipse__right">
-                    {% include "../assets/images/right-arrow-btn.svg" %} 
+                <div class="header__image-gallery__top__ellipse__right">
+                    {% include "../assets/images/icons/right-arrow-btn.svg" %}
                 </div>
             </div>
         </div>
         <div class="header__image-gallery__img">
+            
             <div class="header__image-gallery__img__image">
                 <div class="header__image-gallery__img__image__hero-content">
                     <div class="header__image-gallery__img__image__hero-content__content">
-                        <h2 class="header__image-gallery__img__image__hero-content__content__title">High-Quality Furniture Just For You</h2>
+                        <h1 class="header__image-gallery__img__image__hero-content__content__title">High-Quality
+                            Furniture Just For You</h1>
                         <p class="header__image-gallery__img__image__hero-content__content__text">
-                            Our furniture is made from selected and best quality materials that are suitable for your dream home
+                            Our furniture is made from selected and best quality materials that are suitable for your
+                            dream home
                         </p>
                         <a href="" class="header__image-gallery__img__image__hero-content__content__btn">
                             Shop Now
@@ -68,21 +75,29 @@
                     </div>
     
                 </div>
-              
             </div>
             
-            <div class="header__image-gallery__img__info-box">
-                <h2 class="header__image-gallery__img__info-box_title">Bohauss</h2>
-                <p class="header__image-gallery__img__info-box_content">Luxury big sofa 2-seat</p> 
-                <p class="header__image-gallery__img__info-box_price">Rp 17.000.000</p>
-                <span class="header__image-gallery__img__info-box_arrow">
-                    {% include "../assets/images/info-box-arrow.svg" %} 
-                </span>
+
+            <div class="header__image-gallery__img__info">
+                <div class="header__image-gallery__img__info__box">
+                    <h2 class="header__image-gallery__img__info__box__title">Bohauss</h2>
+                    <p class="header__image-gallery__img__info__box__content">Luxury big sofa 2-seat</p>
+                    <div class="header__image-gallery__img__info__box__price">
+                        <p class="header__image-gallery__img__info__box__price__p">
+                            Rp 17.000.000
+                        </p>
+                        <a href="" class="header__image-gallery__img__info__box__price__arrow">
+                            {% include "../assets/images/icons/info-box-arrow.svg" %}
+                        </a>
+                    </div>
+
+                </div>
             </div>
+          
         </div>
 
 
     </div>
-    
+
 
 </header>
