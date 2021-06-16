@@ -3,8 +3,8 @@
  	height: 670px;
  	background-color: $rooms-bgcolor;
  	box-sizing: border-box;
-min-width: 1400px;
-margin: auto;
+ 	
+ 	margin: auto;
 
 
  	&__container {
@@ -13,8 +13,8 @@ margin: auto;
  		flex-direction: row;
  		justify-content: space-evenly;
  		align-items: center;
-		
-		 
+
+
 
  		&__content {
  			background-color: $rooms-bgcolor;
@@ -24,7 +24,7 @@ margin: auto;
  			flex-direction: column;
  			align-items: flex-start;
  			justify-content: center;
-			 margin-top: 44px;
+ 			margin-top: 44px;
 
 
 
@@ -32,17 +32,16 @@ margin: auto;
  			&__title {
  				display: inline;
  				background-color: $rooms-bgcolor;
-				 color: $title-color;
-				 font-size: 40px;
+ 				color: $title-color;
+ 				font-size: 40px;
  				font-weight: 700;
-				margin: 0;
-
+ 				margin: 0;
 
  			}
 
  			&__subtitle {
  				background-color: $rooms-bgcolor;
-			color: $subtitle-color;
+ 				color: $subtitle-color;
 
  			}
 
@@ -56,31 +55,89 @@ margin: auto;
  				font-weight: 600;
 
  			}
+			 &__link:hover{
+				 opacity: 0.8;
+				 transition: 0.3s;
+			 }
  		}
 
- 		&__slide1 {
+ 		&__current {
+ 	display: flex;
+	 padding: 24px;
+	 align-items: flex-end;
  			width: 404px;
  			height: 582px;
+ 			background-image: url('../images/slider.png');
+
 			 
+ 
+
+ 			&__content {
+				width: 217px;
+				height: 130px;
+				background-color: #ffffffa8;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+ 				
+				
+ 				&__subtitle {
+					 height: 0px;
+				margin-left: 32px;
+				margin-top: 20px;
+				margin-bottom: 30px;
+					background-color: #ffffff1c;
+					color: #616161;
+					;
+					
+				
+ 				}
+				 &__title{
+					 margin: 0px;
+					 padding: 0px;
+					display: inline;
+					 margin-left: 32px;
+					 font-size: 26px;
+					 background-color: #ffffff00;
+					 
+				 }
+				 &__btn{
+					 background-color: $btn-bgcolor;
+					 width: 48px;
+					 height: 48px;
+					 border: none;
+					
+				 }
+				 &__btn:hover{
+				opacity: 0.7;
+					 transition: 0.3s;
+				 }
+ 			}
+
+
+
  		}
 
- 		&__slide2 {
+ 		&__next {
  			width: 372px;
  			height: 582px;
-			 background-color: $rooms-bgcolor;
+ 			background-color: $rooms-bgcolor;
+
+			 
 
 
-		&__icons{
-			background-color: $rooms-bgcolor;
 
-			.svg{
-					background-color: $rooms-bgcolor;
-					margin-top: 40px;
+ 			&__icons {
+ 				background-color: $rooms-bgcolor;
 
-			}
-			
-		}	 
-			
+ 				.svg {
+ 					background-color: $rooms-bgcolor;
+ 					margin-top: 40px;
+
+ 				}
+
+ 			}
+
  		}
 
  	}
@@ -88,59 +145,68 @@ margin: auto;
 
  }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+ @include mq(desktop, max) {
+	.other-rooms__container__next{
+		display: none;
+			}
+		
+}
  @include mq(tablet, max) {
- 	.rooms {
+	
+	.other-rooms__container__next{
+display: none;
+	}
+}
+@include mq(mobile, max) {
+	.other-rooms__container__current{
+display: none;
+	}
 
- 		background-color: black;
+}
 
- 	}
- }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
