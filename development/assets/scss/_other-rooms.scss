@@ -153,14 +153,12 @@
 }
  @include mq(tablet, max) {
 	
-	.other-rooms__container__next{
-display: none;
-	}
+	.other-rooms__container__current{
+		display: none;
+			}
 }
 @include mq(mobile, max) {
-	.other-rooms__container__current{
-display: none;
-	}
+	
 
 }
 
