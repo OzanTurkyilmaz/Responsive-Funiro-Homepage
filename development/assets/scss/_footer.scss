@@ -2,6 +2,8 @@
     display: flex;
     justify-content: center;
     font-family: 'Gilroy-Regular', sans-serif;
+    margin-top: 87px;
+    margin-bottom: 50px;
 
     &__container{
         display: flex;
@@ -19,7 +21,7 @@
             height: -moz-fit-content;
 
             &__text {
-                color: #616161;
+                color: $footer-txt-color;
             }
 
             &__title {
@@ -36,7 +38,7 @@
                 justify-content: space-between;
 
                 &__listItem {
-                    color: #616161;
+                    color: $footer-txt-color;
                     font-size: 16px;
                     margin-bottom: 15px;
                     
@@ -51,17 +53,17 @@
                 &__input {
                     height: 45px;
                     width: 242px;
-                    background-color: #F4F5F7;
+                    background-color: $footer-input-bgc;
                     border: none;
 
                     &::placeholder {
                         padding-left: 7px;
-                        color: #828282;
+                        color: $footer-placeholder-color;
                     }
                 }
 
                 &__svg {
-                    background-color: #E89F71;
+                    background-color: $footer-svg-bgc;
                     height: 45px;
                     width: 46px;
                     display: flex;
@@ -74,16 +76,16 @@
 
             &__adress {
                 display: flex;
-                color: #616161 ;
+                color: $footer-txt-color ;
                 justify-content: flex-start;
             }
 
             &__phone {
-                color: #616161 ;
+                color: $footer-txt-color ;
             }
 
             &__website {
-                color: #616161 ;
+                color: $footer-txt-color ;
             }
         }
         
@@ -96,5 +98,29 @@
         }
 
         
+    }
+}
+
+@include mq(tablet, max) {
+    .footer {
+        margin-top: 20px;
+        
+        &__container {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    }
+}
+
+@include mq(desktop, max) {
+    .footer {
+        margin-top: 30px;
+
+        &__container {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
     }
 }
