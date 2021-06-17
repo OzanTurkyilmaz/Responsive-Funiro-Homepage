@@ -7,6 +7,7 @@ img {
     display: flex;
     flex-direction: column;
     justify-content: center;
+	
     
     &__titles {
     display: flex;
@@ -101,6 +102,7 @@ img {
         display: flex;
         align-items: center;
         justify-content: center;
+				margin-top: 500px;
 
         &__titles {
             display: flex;
@@ -145,6 +147,7 @@ img {
         align-items: center;
         justify-content: center;
         margin: auto;
+				margin-top: 850px;
 
         &__titles {
             display: flex;
